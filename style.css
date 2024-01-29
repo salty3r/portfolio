@@ -384,8 +384,19 @@ article .icon {
 
 /* PROJECTS SECTION */
 #projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projects .header-container {
   text-align: center;
-  padding: 2rem 0;
+}
+
+#projects .project-item {
+  flex: 1 0 auto;
+  width: calc(25% - 20px); /* Adjust this value based on the number of items per row and the desired margin */
+  margin: 10px;
 }
 
 .article-container {
